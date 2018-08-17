@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { StockInventoryComponent } from './containers/stock-inventory.component';
-import { StockBrandComponent } from './components/stock-brand/stock-brand.component';
+import { StockBranchComponent } from './components/stock-branch/stock-branch.component';
 import { StockProductComponent } from './components/stock-product/stock-product.component';
 import { StockSelectorComponent } from './components/stock-selector/stock-selector.component';
 
 @NgModule({
   declarations: [
     StockInventoryComponent,
-    StockBrandComponent,
+    StockBranchComponent,
     StockProductComponent,
     StockSelectorComponent
   ],
@@ -19,10 +19,7 @@ import { StockSelectorComponent } from './components/stock-selector/stock-select
     ReactiveFormsModule
   ],
   exports: [
-    StockInventoryComponent,
-    StockBrandComponent,
-    StockProductComponent,
-    StockSelectorComponent
+    StockInventoryComponent
   ]
 })
 export class StockInventoryModule { }

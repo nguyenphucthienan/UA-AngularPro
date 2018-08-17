@@ -12,7 +12,7 @@ import 'rxjs/add/observable/forkJoin';
   template: `
     <div class="stock-inventory">
       <form [formGroup]="form" (ngSubmit)="onSubmit()">
-        <stock-brand [parent]="form"></stock-brand>
+        <stock-branch [parent]="form"></stock-branch>
         <stock-selector
           [parent]="form"
           [products]="products"

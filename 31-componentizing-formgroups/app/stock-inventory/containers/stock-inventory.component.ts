@@ -7,7 +7,7 @@ import { FormGroup, FormControl, FormArray } from '@angular/forms';
   template: `
     <div class="stock-inventory">
       <form [formGroup]="form" (ngSubmit)="onSubmit()">
-        <stock-brand [parent]="form"></stock-brand>
+        <stock-branch [parent]="form"></stock-branch>
         <stock-selector [parent]="form"></stock-selector>
         <stock-product [parent]="form"></stock-product>
         <div class="stock-inventory__buttons">
